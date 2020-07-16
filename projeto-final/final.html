@@ -6,41 +6,86 @@
     <title>Document</title>
 </head>
 <body>
-    
-<script>
-
+    <script>
+var listaDeNumeros = [];
 var num1 = parseInt (prompt ("Digite o primeiro número"));
+listaDeNumeros.push;
 var num2 = parseInt (prompt ("Digite o segundo número"));
+listaDeNumeros.push;
 var num3 = parseInt (prompt ("Digite o terceiro número"));
+listaDeNumeros.push;
 var num4 = parseInt (prompt ("Digite o quarto número"));
+listaDeNumeros.push;
 var num5 = parseInt (prompt ("Digite o quinto número"));
+listaDeNumeros.push;
 
-var numeros = [num1, num2, num3, num4, num5]
 
-function maiorMenorNumero(){
-    if (numeros < numeros){
-        return ( mensagem = "O número " + numeros + " é menor");
-        return ( mensagem = "O número " + numeros + " é maior");
-    }else 
-        return (mensagem = "O número " + numeros + " é menor");
-        return ( mensagem = "O número " + numeros + " é maior");
 
-    }
+var numeroMaior = Math.max(num1, num2, num3, num4, num5);
+var numeroMenor = Math.min(num1, num2, num3, num4, num5);
 
-    maiorMenorNumero()
-    document.write (mensagem);
+document.write(' O maior número é ' + numeroMaior + '<br>');
+document.write(' O menor é ' + numeroMenor + '<br>');
 
-if (numeros % 2 == 0){
-    document.write (" O número é par");
-
-} else{
-    document.write (" O número é impar");
+if(num1 %2 != 0){
+    document.write(num1 + " é impar" + '<br>');
+}else{
+    document.write(num1 + " é par" + '<br>');
 }
 
-document.write(("A quantidade de números é : ") + numeros.length -1);
+if(num2 %2 != 0){
+    document.write(num2 + " é impar" + '<br>');
+}else{
+    document.write(num2 + " é par" + '<br>');
+}
 
+if(num3 %2 != 0){
+    document.write(num3 + " é impar" + '<br>');
+}else{
+    document.write(num3 + " é par" + '<br>');
+}
 
-</script>
+if(num4%2 != 0){
+    document.write(num4+ " é impar" + '<br>');
+}else{
+    document.write(num4+ " é par" + '<br>');
+}
 
+if(num5 %2 != 0){
+    document.write(num5 + " é impar" + '<br>' + '<br>');
+}else{
+    document.write(num5 + " é par" + '<br>' + '<br>');
+}
+    
+
+// if(num1 == num2 || num1 == num3 || num1 == num4|| num1 == num5){
+//     document.write(' O número repetido é: ' + num1 + '<br>');               
+// }else if(num2 == num1 || num2 == num3 || num2 == num4|| num2 == num5){
+//     document.write(' O número repetido é: ' + num2 + '<br>');                
+// }else if(num3 == num1 || num3 == num2 || num3 == num4|| num3 == num5){
+//     document.write(' O número repetido é: ' + num3 + '<br>');               
+// }else if(num4== num1 || num4== num2 || num4== num3 || num4== num5){
+//     document.write(' O número repetido é: ' + num4+ '<br>');               
+// }else if(num5 == num1 || num5 == num2 || num5 == num3 || num5 == num4){
+//     document.write(' O número repetido é: ' + num5 + + '<br>');                
+// }else{
+//     document.write("Não temos número repetidos!")
+// }
+
+// var cont = 0 + 1;
+// var repetidos = []; 
+
+// var repete = numeros.filter(function(ii,i){
+//     if(numeros.indexOf(ii) !== i){
+//         repetidos.push(ii)
+//         cont++
+//     }
+
+//     return repetidos.indexOf(ii) == i;
+    
+// })
+
+// document.write(`repete ${cont} vezes <br>`)
+    </script>
 </body>
 </html>
